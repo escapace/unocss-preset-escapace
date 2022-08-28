@@ -1,0 +1,80 @@
+{
+  "name": "@escapace/unocss-preset-escapace",
+  "description": "",
+  "version": "0.0.0",
+  "author": "escapace <opensource@escapace.com>",
+  "bugs": "https://github.com/escapace/unocss-preset-escapace/issues",
+  "devDependencies": {
+    "@commitlint/cli": "17.0.3",
+    "@commitlint/config-conventional": "17.0.3",
+    "@ls-lint/ls-lint": "1.11.2",
+    "@types/chai": "4.3.1",
+    "@types/lodash-es": "4.17.6",
+    "@types/mocha": "9.1.1",
+    "@types/node": "18.0.0",
+    "@typescript-eslint/eslint-plugin": "5.30.5",
+    "@typescript-eslint/parser": "5.30.5",
+    "@unocss/core": "0.45.13",
+    "@unocss/preset-mini": "0.45.13",
+    "@unocss/preset-wind": "0.45.13",
+    "arg": "5.0.2",
+    "c8": "7.11.3",
+    "chai": "4.3.6",
+    "changelogithub": "0.12.4",
+    "esbuild": "0.14.48",
+    "eslint": "8.19.0",
+    "eslint-config-escapace": "3.14.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-editorconfig": "4.0.2",
+    "eslint-plugin-no-null": "1.0.2",
+    "execa": "6.1.0",
+    "fast-glob": "3.2.11",
+    "fs-extra": "10.1.0",
+    "husky": "8.0.1",
+    "is-ci": "3.0.1",
+    "lint-staged": "13.0.3",
+    "lodash-es": "4.17.21",
+    "mocha": "10.0.0",
+    "prettier": "2.7.1",
+    "prettier-config-escapace": "1.0.4",
+    "semver": "7.3.7",
+    "syncpack": "8.2.4",
+    "tsx": "3.8.2",
+    "typescript": "4.7.4"
+  },
+  "engines": {
+    "node": ">= 18.2.0",
+    "pnpm": ">= 7.1.7"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/esm/index.mjs",
+      "require": "./lib/cjs/index.cjs"
+    }
+  },
+  "files": [
+    "lib/cjs",
+    "lib/esm",
+    "lib/types"
+  ],
+  "homepage": "https://github.com/escapace/unocss-preset-escapace",
+  "license": "MPL-2.0",
+  "main": "lib/cjs/index.cjs",
+  "module": "lib/esm/index.mjs",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/escapace/unocss-preset-escapace.git",
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "lint": "ls-lint && eslint 'src/**/*.ts?(x)'",
+    "prepare": "is-ci || husky install",
+    "release": "node ./scripts/release.mjs",
+    "test": "node ./scripts/test.mjs && c8 mocha --enable-source-maps 'lib/tests/**/*.spec.js'",
+    "typecheck": "tsc --noEmit"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "lib/types/index.d.ts"
+}
