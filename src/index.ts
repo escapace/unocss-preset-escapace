@@ -1,7 +1,7 @@
 import {
   preflights as presetWindPreflights,
   rules as presetWindRules,
-  shortcuts as presetWindShortcuts,
+  // shortcuts as presetWindShortcuts,
   theme as presetWindTheme,
   variants as presetWindVariants
 } from '@unocss/preset-wind'
@@ -26,7 +26,7 @@ export const presetEscapace = (options: Options = {}): Preset => {
     name: '@escapace/unocss-preset-escapace',
     theme: presetWindTheme,
     rules,
-    shortcuts: presetWindShortcuts,
+    shortcuts: [],
     variants,
     options,
     preflights: presetWindPreflights,

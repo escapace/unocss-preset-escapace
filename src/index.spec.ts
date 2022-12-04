@@ -17,7 +17,7 @@ describe('./src/index.spec.ts', () => {
   it('788 rules', () => {
     const { rules } = presetEscapace()
 
-    assert.ok(rules.length === 788)
+    assert.ok(rules.length === 787)
   })
 
   it('43 @unocss/preset-wind variants', () => {
