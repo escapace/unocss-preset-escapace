@@ -14,7 +14,7 @@ describe('./src/index.spec.ts', () => {
     assert.ok(presetWindRules.length === 847)
   })
 
-  it('788 rules', () => {
+  it('787 rules', () => {
     const { rules } = presetEscapace()
 
     assert.ok(rules.length === 787)
