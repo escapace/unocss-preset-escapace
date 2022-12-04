@@ -1,6 +1,9 @@
 export const EXCLUDE_VARIANTS = ['placeholderModifier']
 
 export const EXCLUDE_RULES: Array<string | RegExp> = [
+  // https://github.com/unocss/unocss/blob/main/packages/preset-wind/src/rules/container.ts
+  /^__container$/,
+
   // https://github.com/unocss/unocss/blob/main/packages/preset-mini/src/_rules/behaviors.ts
 
   /^outline-(?:color-)?(.+)$/,
