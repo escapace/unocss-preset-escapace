@@ -33,3 +33,5 @@ export const presetEscapace = (options: Options = {}): Preset => {
     prefix: options.prefix
   }
 }
+
+presetEscapace()

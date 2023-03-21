@@ -1,8 +1,20 @@
-export const EXCLUDE_VARIANTS = ['placeholderModifier']
+export const EXCLUDE_VARIANTS = [
+  '.dark',
+  '.light',
+  '@dark',
+  '@light',
+  'contrast-less',
+  'negative',
+  'contrast-more',
+  'dark',
+  'light',
+  'placeholderModifier'
+]
 
 export const EXCLUDE_RULES: Array<string | RegExp> = [
   // https://github.com/unocss/unocss/blob/main/packages/preset-wind/src/rules/container.ts
   /^__container$/,
+  /^@container(?:\/(\w+))?(?:-(normal))?$/,
 
   // https://github.com/unocss/unocss/blob/main/packages/preset-mini/src/_rules/behaviors.ts
 
