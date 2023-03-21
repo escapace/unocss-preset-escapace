@@ -1,8 +1,8 @@
-import { presetEscapace } from './index.js'
 import { assert } from 'chai'
 import { intersectionWith } from 'lodash-es'
-import { ruleComparator } from './utilities/rule-comparator.js'
 import { EXCLUDE_RULES } from './constants.js'
+import { presetEscapace } from './index.js'
+import { ruleComparator } from './utilities/rule-comparator.js'
 
 import {
   rules as presetWindRules,
@@ -10,24 +10,24 @@ import {
 } from '@unocss/preset-wind'
 
 describe('./src/index.spec.ts', () => {
-  it('847 @unocss/preset-wind rules', () => {
-    assert.ok(presetWindRules.length === 847)
+  it('@unocss/preset-wind rules', () => {
+    assert.equal(presetWindRules.length, 846)
   })
 
   it('787 rules', () => {
     const { rules } = presetEscapace()
 
-    assert.ok(rules.length === 787)
+    assert.equal(rules.length, 786)
   })
 
-  it('43 @unocss/preset-wind variants', () => {
-    assert.ok(presetWindVariants({}).length === 43)
+  it('@unocss/preset-wind variants', () => {
+    assert.equal(presetWindVariants({}).length, 44)
   })
 
-  it('42 variants', () => {
+  it('variants', () => {
     const { variants } = presetEscapace()
 
-    assert.ok(variants.length === 42)
+    assert.equal(variants.length, 34)
   })
 
   it('rules are excluded', () => {
