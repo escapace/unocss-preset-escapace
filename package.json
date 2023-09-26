@@ -61,7 +61,7 @@
   "license": "MPL-2.0",
   "module": "lib/esm/index.mjs",
   "private": false,
-  "repository": "escapace/unocss-preset-escapace.git",
+  "repository": "escapace/unocss-preset-escapace",
   "scripts": {
     "build": "node ./scripts/build.mjs",
     "lint": "ls-lint && eslint 'src/**/*.ts?(x)'",
