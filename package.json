@@ -21,7 +21,7 @@
     "@unocss/preset-mini": "0.57.1",
     "@unocss/preset-wind": "0.57.1",
     "c8": "8.0.1",
-    "chai": "4.3.10",
+    "chai": "5.1.0",
     "esbuild": "0.19.5",
     "eslint": "8.52.0",
     "eslint-config-escapace": "3.18.2",
