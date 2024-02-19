@@ -20,7 +20,7 @@
     "@unocss/core": "0.57.1",
     "@unocss/preset-mini": "0.57.1",
     "@unocss/preset-wind": "0.57.1",
-    "c8": "8.0.1",
+    "c8": "9.1.0",
     "chai": "4.3.10",
     "esbuild": "0.19.5",
     "eslint": "8.52.0",
