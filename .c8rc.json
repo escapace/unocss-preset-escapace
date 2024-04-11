@@ -2,10 +2,11 @@
   "all": true,
   "reporter": ["json", "text"],
   "exclude": [
-    "node_modules/**",
     "**/*.spec.?(m)@(j|t)s?(x)",
-    "scripts",
+    "**/eslint.config.mjs",
     "lib",
+    "node_modules/**",
+    "scripts",
     "src/types.ts"
   ],
   "excludeAfterRemap": true,
