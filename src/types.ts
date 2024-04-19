@@ -11,22 +11,22 @@ export type Theme = Omit<MiniTheme, 'colors'>
 export type Preset<T extends {} = Theme> = Omit<
   MiniPreset<T>,
   | 'name'
-  | 'theme'
-  | 'rules'
-  | 'shortcuts'
-  | 'variants'
   | 'options'
   | 'preflights'
+  | 'rules'
+  | 'shortcuts'
+  | 'theme'
+  | 'variants'
 > &
   Required<
     Pick<
       MiniPreset<T>,
       | 'name'
-      | 'theme'
-      | 'rules'
-      | 'shortcuts'
-      | 'variants'
       | 'options'
       | 'preflights'
+      | 'rules'
+      | 'shortcuts'
+      | 'theme'
+      | 'variants'
     >
   >

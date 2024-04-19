@@ -1,7 +1,7 @@
 import type { Rule } from '@unocss/core'
 import { isEqualWith, isRegExp } from 'lodash-es'
 
-export const ruleComparator = (rule: Rule, exclude: string | RegExp) => {
+export const ruleComparator = (rule: Rule, exclude: RegExp | string) => {
   const matcher = rule[0]
 
   return isEqualWith(

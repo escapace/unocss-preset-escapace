@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/better-regex */
 export const EXCLUDE_VARIANTS = [
   '.dark',
   '.light',
@@ -11,7 +12,7 @@ export const EXCLUDE_VARIANTS = [
   'placeholderModifier'
 ]
 
-export const EXCLUDE_RULES: Array<string | RegExp> = [
+export const EXCLUDE_RULES: Array<RegExp | string> = [
   // https://github.com/unocss/unocss/blob/main/packages/preset-wind/src/rules/container.ts
   /^__container$/,
   /^@container(?:\/(\w+))?(?:-(normal))?$/,
