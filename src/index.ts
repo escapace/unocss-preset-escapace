@@ -7,7 +7,7 @@ import {
 } from '@unocss/preset-wind'
 import { differenceWith } from 'lodash-es'
 import { EXCLUDE_RULES, EXCLUDE_VARIANTS } from './constants'
-import { Options, Preset } from './types'
+import type { Options, Preset } from './types'
 import { ruleComparator } from './utilities/rule-comparator'
 import { variantComparator } from './utilities/variant-comparator'
 
@@ -24,13 +24,13 @@ export const presetEscapace = (options: Options = {}): Preset => {
 
   return {
     name: '@escapace/unocss-preset-escapace',
-    theme: presetWindTheme,
+    options,
+    prefix: options.prefix,
+    preflights: presetWindPreflights,
     rules,
     shortcuts: [],
-    variants,
-    options,
-    preflights: presetWindPreflights,
-    prefix: options.prefix
+    theme: presetWindTheme,
+    variants
   }
 }
 
