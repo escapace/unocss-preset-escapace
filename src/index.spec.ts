@@ -1,10 +1,9 @@
-import { assert } from 'chai'
+import { rules as presetWindRules } from '@unocss/preset-wind'
 import { intersectionWith } from 'lodash-es'
+import { assert, describe, it } from 'vitest'
 import { EXCLUDE_RULES } from './constants.js'
 import { presetEscapace } from './index.js'
 import { ruleComparator } from './utilities/rule-comparator.js'
-
-import { rules as presetWindRules } from '@unocss/preset-wind'
 
 describe('./src/index.spec.ts', () => {
   // it('@unocss/preset-wind rules', () => {
@@ -35,7 +34,7 @@ describe('./src/index.spec.ts', () => {
       assert.deepEqual(
         intersectionWith(presetWindRules, [exclude], ruleComparator).length,
         1,
-        `${exclude.toString()}`
+        `${exclude.toString()}`,
       )
     })
   })
