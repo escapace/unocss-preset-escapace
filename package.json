@@ -10,7 +10,7 @@
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
-    "@escapace/pnpm-pack": "0.3.0",
+    "@escapace/pnpm-pack": "0.4.1",
     "@ls-lint/ls-lint": "2.2.3",
     "@types/lodash-es": "4.17.12",
     "@unocss/core": "0.59.4",
@@ -18,9 +18,9 @@
     "@unocss/preset-wind": "0.59.4",
     "@vitest/coverage-v8": "1.6.0",
     "eslint": "9.2.0",
-    "eslint-config-escapace": "5.0.9",
+    "eslint-config-escapace": "5.0.12",
     "esroll": "0.1.1",
-    "knip": "5.12.3",
+    "knip": "5.13.0",
     "lefthook": "1.6.10",
     "lodash-es": "4.17.21",
     "prettier": "3.2.5",
@@ -54,6 +54,7 @@
   "repository": "escapace/unocss-preset-escapace",
   "scripts": {
     "build": "tsx scripts/build.ts",
+    "format": "eslint --no-warn-ignored --fix && prettier -uw .",
     "lint": "ls-lint --config .ls-lint.yaml && knip && eslint",
     "pack": "pnpm-pack package --pack-destination lib",
     "prepare": "lefthook install",
