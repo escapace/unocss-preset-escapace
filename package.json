@@ -18,7 +18,7 @@
     "@unocss/preset-wind": "0.59.4",
     "@vitest/coverage-v8": "1.6.0",
     "eslint": "9.2.0",
-    "eslint-config-escapace": "5.1.1",
+    "eslint-config-escapace": "5.1.2",
     "esroll": "0.1.1",
     "knip": "5.13.0",
     "lefthook": "1.6.10",
